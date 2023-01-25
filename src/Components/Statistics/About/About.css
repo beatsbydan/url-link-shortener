@@ -1,0 +1,82 @@
+.About{
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 120px;
+}
+.profiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+}
+.profiles::after{
+    content: '';
+    background-color: var(--Cyan);
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    display: inline-flex;
+    position: absolute;
+}
+.two{
+    margin-top: 50px;
+}
+.three{
+    margin-top:100px;
+}
+.profile{
+    position: relative;
+    width: 30%;
+    height: fit-content;
+    background-color: white;
+    text-align: left;
+    padding: 3%;
+    border-radius: 5px;
+}
+.profile h3{
+    padding-top: 30px;
+    color: var(--Very-Dark-Violet);
+}
+.profile p{
+    padding-top: 10px;
+    line-height: 1.6em;
+}
+.image{
+    width: fit-content;
+    padding: 15px;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: var(--Dark-Violet);
+}
+.image img{
+    width: 30px;
+    display: flex;
+    margin: auto;
+}
+@media screen and (max-width:550px) {
+    .profiles{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .profile{
+        padding: 5%;
+        width: 100%;
+    }
+    .profiles::after{
+        width: 10px;
+        height: 100%;
+    }
+    .two, .three{
+        margin-top: unset;
+    }
+    .image{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

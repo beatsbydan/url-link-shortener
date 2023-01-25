@@ -1,0 +1,19 @@
+.Statistics{
+    padding: 0 5%;
+    margin-top: 160px;
+    background-color: var(--Gray-lower);
+    text-align: center;
+    position: relative;
+}
+.Statistics h2{
+    padding-top: 50px;
+    font-size: 2rem;
+    color: var(--Very-Dark-Violet);
+}
+.Statistics p{
+    color: var(--Gray);
+    font-size: 0.9rem;
+}
+.Statistics p span{
+    display: block;
+}

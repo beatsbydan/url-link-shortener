@@ -1,0 +1,27 @@
+.Boost{
+    text-align: center;
+    padding: 40px 0 50px 0;
+    background-image: url(../../images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--Dark-Violet);
+}
+.Boost button{
+    cursor: pointer;
+    background-color: var(--Cyan);
+    color: white;
+    padding:12px;
+    margin-top: 20px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 25px;
+}
+.Boost button:hover{
+    background-color: var(--Sharp-Cyan);
+}
+.Boost h2{
+    color: white;
+}

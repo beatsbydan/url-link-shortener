@@ -1,0 +1,73 @@
+.Shortener{
+
+}
+.shortener{
+    width: 100%;
+    padding: 30px 0;
+    background-image: url(../../../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: var(--Dark-Violet);
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+form{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 27%;
+    gap: 3%;
+    padding: 5px 20px ;
+    justify-content: center;
+}
+form input, form button{
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+form button{
+    height: 55px;
+}
+input:focus{
+    outline: none;
+}
+form button{
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--Cyan);
+    color: white;
+}
+form button:hover{
+    background-color: var(--Sharp-Cyan);
+}
+em{
+    height: 10px;
+    color:var(--Red);
+    font-weight: 500;
+    text-align: left;
+    font-size: 0.8rem;
+}
+input{
+    border:2px solid red;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media screen and (max-width:550px) {
+    form{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+        gap: 15px;
+    }
+    form input, form button{
+        width: 100%;
+    }
+}

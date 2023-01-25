@@ -1,0 +1,74 @@
+.GetStarted{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+    overflow-x: hidden;
+}
+.left h1{
+    font-size: 4rem;
+    line-height: 1.2em;
+    color: var(--Very-Dark-Blue);
+}
+.left p{
+    color: var(--Gray);
+}
+.left button{
+    padding: 10px 10%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Cyan);
+    margin-top: 30px;
+}
+.left button:hover{
+    opacity: 0.6;
+}
+.left button a{
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.right{
+    background-image: url(../../images/illustration-working.svg);
+    background-position: right;
+    width: 100%;
+    position: relative;
+    right: -10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+}
+@media screen and (max-width: 750px) {
+    .GetStarted{
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 100%;
+        background-size: 103%;
+        right: -18%;
+    }
+    .left{
+        padding-right: 5%;
+        text-align: center;
+    }
+    .left h1{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width:740px) {
+    .GetStarted{
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width:850px) and (max-width:1000px) {
+    .GetStarted{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .GetStarted{
+        margin-top: 10px;
+    }
+}
