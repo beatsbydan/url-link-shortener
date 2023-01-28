@@ -1,14 +1,8 @@
-import { useState } from 'react';
 import './ShowShortenedLinks.css'
 import '../../App.css'
+import Button from './Button/Button';
+
 const ShowShortenedLinks  = ({links}) => {
-    const [copyState, setCopyState] = useState('Copy')
-    const [bgColor, setBgColor] = useState('hsl(180, 66%, 49%)')
-    const handleCopy = (e) => {
-        setCopyState('Copied!');
-        setBgColor('hsl(255, 11%, 22%)',);
-        //navigator.clipboard.writeText(link.short_link)
-    }
     return ( 
         <div className="ShowShortenedLinks">
             <ul className="links">
@@ -20,7 +14,7 @@ const ShowShortenedLinks  = ({links}) => {
                         </div>
                         <div className="generated">
                             <p>{link.short_link}</p>
-                            <button key={link.id} onClick={(e)=>handleCopy(e)} style ={{background: bgColor }}>{copyState}</button>
+                            <Button short = {link.short_link}/>
                         </div>
                     </li>
                 )

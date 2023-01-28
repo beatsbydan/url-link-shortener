@@ -1,18 +1,3 @@
-.generated button{
-    background-color: var(--Cyan);
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 100%;
-    max-width: 100px;
-    padding: 7px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.generated button:hover{
-    opacity: 0.5;
-}
 .link .generated p{
     color: var(--Cyan);
 }
@@ -58,9 +43,6 @@
         gap: 10px;
         padding-top: 10px;
         align-items: flex-start;
-    }
-    .generated button{
-        max-width: unset;
     }
     .links-flex{
         width: 100%;
