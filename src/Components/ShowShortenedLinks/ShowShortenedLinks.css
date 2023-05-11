@@ -1,8 +1,10 @@
 .link .generated p{
     color: var(--Cyan);
+    font-size: 1.2rem;
 }
 .link .links-flex p{
     color: var(--Very-Dark-Violet);
+    font-size: 1.2rem;
 }
 .links{
     width: 100%;

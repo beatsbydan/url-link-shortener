@@ -13,6 +13,7 @@
 }
 .left p{
     color: var(--Gray);
+    font-size: 1.1rem;
 }
 .left button{
     padding: 10px 10%;

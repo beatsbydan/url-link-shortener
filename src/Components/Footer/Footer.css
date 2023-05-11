@@ -5,10 +5,12 @@
     background-color: var(--Very-Dark-Blue);
 }
 .Footer h4{
+    font-size: 1.2rem;
     color: white;
     margin-bottom:20px;
 }
 .Footer a{
+    font-size: 1.1rem;
     color: var(--Grayish-Violet);
 }
 .Footer a:hover{
