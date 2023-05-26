@@ -31,6 +31,7 @@
 .profile{
     position: relative;
     width: 30%;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: white;
     text-align: left;
@@ -46,6 +47,7 @@
     line-height: 1.6em;
 }
 .image{
+    width: -moz-fit-content;
     width: fit-content;
     padding: 15px;
     position: absolute;

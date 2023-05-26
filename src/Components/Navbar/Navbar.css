@@ -26,9 +26,6 @@ nav{
     font-weight: 700;
     font-size: 1.1rem;
 }
-.navs li a:hover{
-    color: var(--Dark-Violet);
-}
 .buttons{
     width: 100%;
     max-width:230px;
@@ -49,9 +46,6 @@ nav{
     font-weight: 700;
     font-size: 1.1rem;
 }
-.buttons button:nth-child(1) a:hover{
-    color: var(--Dark-Violet);
-}
 .buttons button:nth-child(2) a{
     color: white;
     font-weight: 700;
@@ -59,9 +53,6 @@ nav{
 }
 .buttons button:nth-child(2){
     background-color: var(--Cyan);
-}
-.buttons button:nth-child(2):hover{
-    opacity: 0.6;
 }
 .flex{
     display: flex;
@@ -117,9 +108,11 @@ nav{
     .navs li a, .buttons button:nth-child(1) a{
         color: white;
     }
-    .navs li a:hover, .buttons button:nth-child(1) a:hover, .buttons button:nth-child(2):hover{
-        opacity: unset;
-        color: white;
+    @media (hover: hover){
+        .navs li a:hover, .buttons button:nth-child(1) a:hover, .buttons button:nth-child(2):hover{
+            opacity: unset;
+            color: white;
+        }
     }
     .buttons{
         width: 100%;
@@ -130,5 +123,16 @@ nav{
     }
     .responsive_nav{
         transform: translateY(0);
+    }
+}
+@media (hover: hover){
+    .buttons button:nth-child(2):hover{
+        opacity: 0.6;
+    }
+    .navs li a:hover{
+        color: var(--Dark-Violet);
+    }
+    .buttons button:nth-child(1) a:hover{
+        color: var(--Dark-Violet);
     }
 }

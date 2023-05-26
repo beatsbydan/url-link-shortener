@@ -39,9 +39,6 @@ form button{
     background-color: var(--Cyan);
     color: white;
 }
-form button:hover{
-    background-color: var(--Sharp-Cyan);
-}
 em{
     height: 10px;
     color:var(--Red);
@@ -67,5 +64,10 @@ input{
     }
     form input, form button{
         width: 100%;
+    }
+}
+@media (hover: hover){
+    form button:hover{
+        background-color: var(--Sharp-Cyan);
     }
 }

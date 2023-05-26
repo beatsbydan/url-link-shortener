@@ -23,9 +23,6 @@
     background-color: var(--Cyan);
     margin-top: 30px;
 }
-.left button:hover{
-    opacity: 0.6;
-}
 .left button a{
     color: white;
     font-weight: 700;
@@ -71,5 +68,10 @@
 @media screen and (min-width:1000px) {
     .GetStarted{
         margin-top: 10px;
+    }
+}
+@media (hover: hover){
+    .left button:hover{
+        opacity: 0.6;
     }
 }

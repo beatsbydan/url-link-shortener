@@ -13,9 +13,6 @@
     font-size: 1.1rem;
     color: var(--Grayish-Violet);
 }
-.Footer a:hover{
-    color: var(--Cyan);
-}
 .rest{
     width: 80%;
     display: flex;
@@ -32,9 +29,6 @@
 .social{
     cursor: pointer;
     fill:#FFFFFF;
-}
-.social:hover{
-    fill: var(--Cyan);
 }
 .column-flex{
     display: flex;
@@ -55,5 +49,13 @@
     }
     .socials{
         margin: auto;
+    }
+}
+@media (hover: hover){
+    .social:hover{
+        fill: var(--Cyan);
+    }
+    .Footer a:hover{
+        color: var(--Cyan);
     }
 }

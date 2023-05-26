@@ -20,9 +20,11 @@
     border: none;
     border-radius: 25px;
 }
-.Boost button:hover{
-    background-color: var(--Sharp-Cyan);
-}
 .Boost h2{
     color: white;
+}
+@media (hover: hover){
+    .Boost button:hover{
+        background-color: var(--Sharp-Cyan);
+    }
 }
